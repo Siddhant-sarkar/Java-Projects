@@ -1,0 +1,27 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+    <top>
+        <Label text ="Tihs is centerd text fill" alignment="center"
+               BorderPane.alignment="CENTER"
+               
+               style="-fx-border color: blue ; -fx-border-width: 3; -fx-border-style : dashed"></Label>
+    </top>
+    <bottom>
+        <HBox spacing="10" alignment="TOP_RIGHT">
+            <padding>
+                <Insets right="10" bottom="10"></Insets>
+            </padding>
+            <Button text ="Okay" prefWidth="90"></Button>
+                <Button text ="Cancel" prefWidth="90"></Button>
+                <Button text ="Next" prefWidth="90"></Button>
+        </HBox>
+    </bottom>
+
+</BorderPane>

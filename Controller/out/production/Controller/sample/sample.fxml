@@ -1,0 +1,43 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" gridLinesVisible="true">
+    <Button text="Click me">
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/general/About16.gif"></Image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Label GridPane.columnIndex="1" GridPane.rowIndex="0" text="This is another " textFill="aqua" wrapText="true">
+        <font>
+            <Font name="Arial italic" size="16"></Font>
+        </font>
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/table/ColumnInsertAfter16.gif"></Image>
+            </ImageView>
+        </graphic>
+    </Label>
+    <fx:define>
+        <ToggleGroup fx:id="ButtonGroup">
+        </ToggleGroup>
+    </fx:define>
+    <RadioButton text="Button 1" GridPane.rowIndex="1" GridPane.columnIndex="0" toggleGroup="$ButtonGroup"></RadioButton>
+    <RadioButton text="Button 2" GridPane.rowIndex="2" GridPane.columnIndex="0" toggleGroup="$ButtonGroup" selected="true"></RadioButton>
+    <RadioButton text="Button 2" GridPane.rowIndex="3" GridPane.columnIndex="0" toggleGroup="$ButtonGroup"></RadioButton>
+    <RadioButton text="Button 2" GridPane.rowIndex="4" GridPane.columnIndex="0" toggleGroup="$ButtonGroup"></RadioButton>
+
+    <CheckBox text="Are you abvove 18 years old???" GridPane.columnIndex="1" GridPane.rowIndex="4" indeterminate="true"></CheckBox>
+
+
+</GridPane>

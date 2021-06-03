@@ -1,0 +1,20 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="100" vgap="101"
+          gridLinesVisible="true">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50.0"></ColumnConstraints>
+        <ColumnConstraints percentWidth="50.0"></ColumnConstraints>
+    </columnConstraints>
+    <Button text ="Button 1" GridPane.columnIndex="0" GridPane.rowIndex="0"></Button>
+    <Button text ="Button 2" GridPane.columnIndex="1" GridPane.rowIndex="0"></Button>
+    <Button text ="Button 3" GridPane.columnIndex="0" GridPane.rowIndex="1"></Button>
+    <Button text ="Button 4 This is a really long button " GridPane.columnIndex="1" GridPane.rowIndex="1"></Button>
+    <Button text ="Button 5" GridPane.columnIndex="0" GridPane.rowIndex="2"></Button>
+
+</GridPane>
